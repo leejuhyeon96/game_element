@@ -20,6 +20,8 @@
 	body{margin: 0 auto; width:600px;font-weight:300;margin-top:160px;}
 	img{width:100%;margin-bottom:10px;}
 	nav{width:150px;height:100px;float:right;margin-top:-140px;margin-right:-380px;}
+	
+	footer{text-align:center;font-weight: 100;color:black;font-size:12px;margin-top:100px;}
 	.balloon{
 			width:50px; height:400px; 
 			background-repeat:no-repeat;
@@ -32,7 +34,6 @@
 		80%{ opacity:1; }
 		100%{ background-position:0 0;opacity:0;}
 		}
-	footer{text-align:center;font-weight: 100;color:black;font-size:12px;margin-top:100px;}
 	html {font-family: 'Spoqa Han Sans', 'Sans-serif'; }
 	</style>
 </head>
@@ -49,11 +50,11 @@
 	function checkTime(){
 		a = a + 1;
 		console.log(a);
-		time.innerHTML = " 연한 분홍색은 누르지마 "+ (199 - a) / 10 + "초 남았어~~";
+		time.innerHTML = " 연한 분홍색은 누르지마 "+ (199 - a) / 10 + "초 남았어~";
 	}
 
 	function result(){
-		alert("게임이 끝났습니다. 당신의 점수는 "+mark+"점입니다.");
+		alert("Game Over-♥ 당신의 점수는 "+mark+"점입니다.");
 		clearInterval(game);
 		clearInterval(timeD);
 	}
