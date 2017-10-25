@@ -4,6 +4,7 @@
 	<title>game_element</title>
 	<link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
 
+
 <header class="wrap">
   <nav id="nav">
     <div class="navwrap">
@@ -12,6 +13,7 @@
     </div>
   </nav>
 </header>
+<audio src="bgm.mp4" autoplay loop preload></audio>
 
 <body>
 	<img src="cont.png">
@@ -42,7 +44,7 @@
 <body>
 	<script>
 	var timeD = setInterval(checkTime,100);
-	setTimeout(result,20000);
+	setTimeout(result,40000);
 	var game = setInterval(attachBalloon,300); //요소 양(갯수)
 
 	var a = 0;
@@ -50,7 +52,7 @@
 	function checkTime(){
 		a = a + 1;
 		console.log(a);
-		time.innerHTML = " 연한 분홍색은 누르지마 "+ (199 - a) / 10 + "초 남았어~";
+		time.innerHTML = " 연한 분홍색은 누르지마 "+ (399 - a) / 10 + "초 남았어~";
 	}
 
 	function result(){
