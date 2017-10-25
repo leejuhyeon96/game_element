@@ -42,14 +42,14 @@
 	<script>
 	var timeD = setInterval(checkTime,100);
 	setTimeout(result,20000);
-	var game = setInterval(attachBalloon,500);
+	var game = setInterval(attachBalloon,300); //요소 양(갯수)
 
 	var a = 0;
 	var mark = 0;
 	function checkTime(){
 		a = a + 1;
 		console.log(a);
-		time.innerHTML = "연한 하트는 누르지마! "+ (199 - a) / 10 + "초 남았어요.";
+		time.innerHTML = " 연한 분홍색은 누르지마 "+ (199 - a) / 10 + "초 남았어~~";
 	}
 
 	function result(){
@@ -81,14 +81,14 @@
 		var markText = "";
 		if(color == 1){
 			mark -= 300;
-			markText = "에고고 " + mark+"점으로 줄었어~";
-			displayMark.style.fontSize = "3em";
-			displayMark.style.color = "hotpink";
+			markText = "" + mark+"점으로 줄었어ㅠ";
+			displayMark.style.fontSize = "15px";
+			displayMark.style.color = "black";
 		}else{
 			mark += 100;
-			markText = "잘했어! " + mark+"점이야!!";
-			displayMark.style.fontSize = "1em";
-			displayMark.style.color = "black";	
+			markText = "좋아 " + mark+ "점";
+			displayMark.style.fontSize = "15px;";
+			displayMark.style.color = "hotpink";	
 		}
 		displayMark.innerHTML = markText;
 		remove(t);
